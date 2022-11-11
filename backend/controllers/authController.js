@@ -179,8 +179,6 @@ exports.updateProfile = catchAsyncErrors(async(req,res,next)=>{
     })
 })
 
-
-
 // Logout user => /api/v1/logout
 exports.logout = catchAsyncErrors( async(req,res,next)=>{
     res.cookie('token', null, {
@@ -191,5 +189,30 @@ exports.logout = catchAsyncErrors( async(req,res,next)=>{
     res.status(200).json({
         success: true,
         message: "Logged out"
+    })
+})
+
+// ADMIN ROUTES
+// Get All users => /api/v1/admin/users
+exports.allUsers = catchAsyncErrors(async(req,res,next)=>{
+    const users = await User.find();
+
+    res.status(200).json({
+        success: true,
+        users
+    })
+})
+
+// Get user detail => /api/v1/admin/user/:findById
+exports.allUsers = catchAsyncErrors(async(req,res,next)=>{
+    const user = await User.findById(req.params.id);
+
+    if(!user){
+        return next(new ErrorHandler(`User does not found with id: ${req.params.id}`))
+    }
+
+    res.status(200).json({
+        success: true,
+        user
     })
 })
