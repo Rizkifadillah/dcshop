@@ -1,0 +1,67 @@
+[
+    {
+        "name": "SanDisk Ultra 128GB",
+        "price": "45.89",
+        "description": "Ultra-fast cards to take better pictures and Full HD Video",
+        "ratings": 4.5,
+        "images": [{
+            "public_id": "test/mbnmvi6aicutf3yfs6dl",
+            "url": "https://res.cloudinary.com/dwrgsiyn2/image/upload/v1668004453/test/mbnmvi6aicutf3yfs6dl.jpg"
+        }],
+        "category": "Electronics",
+        "seller": "Ebay",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+    },
+    {
+        "name": "Xiaomi",
+        "price": "145.89",
+        "description": "Smart-fast cards to take better pictures and Full HD Video",
+        "ratings": 4.5,
+        "images": [{
+            "public_id": "test/mbnmvi6aicutf3yfs6dl",
+            "url": "https://res.cloudinary.com/dwrgsiyn2/image/upload/v1668004453/test/mbnmvi6aicutf3yfs6dl.jpg"
+        }],
+        "category": "Headphones",
+        "seller": "Ebay",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+    },
+    {
+        "name": "Bag Waterproof",
+        "price": "10.89",
+        "description": "Ultra-fast cards to take better pictures and Full HD Video",
+        "ratings": 4.5,
+        "images": [{
+            "public_id": "test/mbnmvi6aicutf3yfs6dl",
+            "url": "https://res.cloudinary.com/dwrgsiyn2/image/upload/v1668004453/test/mbnmvi6aicutf3yfs6dl.jpg"
+        }],
+        "category": "Outdoor",
+        "seller": "Alibaba",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+    },
+    {
+        "name": "Boss Bluetooth",
+        "price": "20.89",
+        "description": "Ultra-fast cards to take better pictures and Full HD Video",
+        "ratings": 4.5,
+        "images": [{
+            "public_id": "test/mbnmvi6aicutf3yfs6dl",
+            "url": "https://res.cloudinary.com/dwrgsiyn2/image/upload/v1668004453/test/mbnmvi6aicutf3yfs6dl.jpg"
+            },
+            {
+            "public_id": "test/mbnmvi6aicutf3yfs6dl",
+            "url": "https://res.cloudinary.com/dwrgsiyn2/image/upload/v1668004453/test/mbnmvi6aicutf3yfs6dl.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Amazon",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+    }
+]
