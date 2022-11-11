@@ -83,5 +83,19 @@ const orderSchema = mongoose.Schema({
         type: Number,
         required: true,
         default: 0.0
+    },
+    orderStatus:{
+        type: String,
+        required: true,
+        default: 'Processing'
+    },
+    deliveredAt:{
+        type: Date
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
     }
 })
+
+module.exports = mongoose.model('Order', orderSchema)
