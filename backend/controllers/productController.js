@@ -16,8 +16,10 @@ exports.newProduct = catchAsyncErrors (async(req,res,next)=>{
 // Get all products => /api/v1/products?keyword=apple
 exports.getProducts = catchAsyncErrors (async (req,res,next)=>{
 
-    const resPerPage = 2;
-    const productCount = await Product.countDocuments()
+    // return next(new ErrorHandler('My Error', 404))
+
+    const resPerPage = 8;
+    const productsCount = await Product.countDocuments()
 
     const apiFeatures = new APIFeatures(Product.find(), req.query)
                         .search()
@@ -26,12 +28,14 @@ exports.getProducts = catchAsyncErrors (async (req,res,next)=>{
                         
     const products  = await apiFeatures.query;
 
-    res.status(200).json({
-        success: true,
-        count: products.length,
-        productCount,
-        products
-    })
+    setTimeout(()=>{
+        res.status(200).json({
+            success: true,
+            // count: products.length,
+            productsCount,
+            products
+        })
+    },2000)
 })
 
 // Get single product detail => /api/v1/product/:id 
